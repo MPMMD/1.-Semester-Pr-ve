@@ -1,0 +1,21 @@
+
+
+.topnav {
+    position: relative;
+}
+
+.icon{
+    margin: 1em 2em;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 48px;
+}
+.dropdownItems{
+    display: hidden;
+}
+
+.topnav a:hover{
+    display: flex;
+    flex-direction: column;
+}
