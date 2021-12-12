@@ -1,7 +1,20 @@
+:root{
+    --light-color:#FFFCF2;
+    --mid-color:#CCC5B9;
+    --dark-color:#403D39;
+    --accent-color:#FFAA58;
+}
 
-
-.topnav {
+body{
+    background-color: var(--light-color);
+    margin: 0;
+}
+h2{
+    color: var(--accent-color);
+}
+nav {
     position: relative;
+    font-size: 24pt;
 }
 
 .icon{
@@ -11,11 +24,18 @@
     right: 0;
     font-size: 48px;
 }
-.dropdownItems{
+.menuItems{
     display: hidden;
 }
 
-.topnav a:hover{
+nav a:hover{
     display: flex;
     flex-direction: column;
+}
+.skole{
+    background-color: var(--mid-color);
+}
+.frame{
+    display: flex;
+    background-color: var(--dark-color);
 }
