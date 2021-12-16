@@ -1,0 +1,269 @@
+@font-face{
+    font-family: bratsy;
+    src: url(BratsyScriptDemo.otf);
+}
+
+:root{
+    --hover-color:#5FA28D;
+    --click-color:#74bca3;
+    --underOverskrift-color:#E5771E;
+    --overskrift-font: bratsy;
+    --mobiloverskriftsize: 50px; 
+    --nav-color:#5A3D2B;
+    --selected-color:#C78573;
+    --footer-color:#F4A127;
+    --border-color:#707070; 
+    --tekst-font:arial;
+}
+
+/* Alt i denne blok er Mobile view- Maiken */
+body{
+    margin: 0;
+    background-color: #fff1c6;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+h2{
+    color: var(--underOverskrift-color);
+}
+.forside-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.forside-section-text{
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+.forside-img{
+    padding-top: 25px;
+    display: block;
+    margin-right: auto;
+}
+.forside-img-reverse{
+    padding-top: 25px;
+    transform: scaleX(-1);
+    display: block;
+    margin-left: auto;  
+}
+.forside-section-text h2{
+    margin: 0;
+    padding: 0;
+
+}
+.forside-section-text-right{
+    text-align: right;
+    padding-bottom: 30px;
+}
+.forside-section-picture-flow{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.footer-main{
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;  
+}
+.footer h3, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: block;
+}
+.footer p{
+    color: white;
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+}
+.footer-some{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.footer-some p{
+    display: none;
+    color: white;
+}
+.forside-img-vertical{
+    display: none;
+}
+marquee{
+    display: none;
+}
+.webNavMain{
+    display: none;
+}
+.mobilNavMenu{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: 91px;
+}
+
+.mobilNavMenu a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mobilNavMenu ul{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    padding: 0;
+    
+}
+
+.mobilNavMenu li{
+    background-color: var(--click-color);
+    list-style: none;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid gray;
+    height: 75px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.mobilNavMenu li a{
+    display: block;
+    width: 100%;
+    height: 65px;
+    padding-top: 25px; 
+}
+/* Alt i denne blok er desktop view - Maiken*/
+@media screen and (min-width: 420px) {
+    .mobilNavMenu{
+        display: none;
+    }
+    .footer-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 200px;
+    }  
+    .footer-some{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .footer-some p{
+        display: inline-flex;
+    }
+    .some-icon-row-bottom{
+        grid-row: 2/2;
+        padding: 10px;
+    }
+    .some-icon-row-top{
+        grid-row: 1/2;
+        padding: 10px;
+    }
+    .forside-body{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .forside-header{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .forside-logo{
+        margin-top: 50px;
+    }
+    .forside-section-text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row: 2;
+        padding: 20px;
+    }
+    .forside-section-picture-flow{
+        display: none;
+    }
+    .forside-img-vertical{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forside-img-vertical img{
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+    marquee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: normal;
+        overflow: hidden;
+    }
+    .forside-text{
+        margin-left: 300px;
+        margin-right: 100px;
+    }
+
+    /*NAVIGATIONSBAR LAVET AF EMIL*/
+
+    .webNavMain{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--nav-color);
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .webNavMain ul{
+        display: flex;
+        height: 73px;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+    .webNavMain a{
+        color: white;
+        text-decoration: none;
+        width: 260px;
+    }
+    .webNavMain li{
+        display: inline;
+    }
+    .webNavMain li a{
+        padding-top: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #navLogo{
+        padding-top: 0;
+    }
+    .textLink{
+        background-color: var(--click-color);
+        width: 260px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .textLink:hover{
+        background-color: #5FA28D;
+    }
+    .webNavMain img{
+        display: inline;
+        width: 70px;
+    }
+}

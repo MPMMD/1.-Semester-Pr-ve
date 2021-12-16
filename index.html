@@ -13,15 +13,11 @@
     <link rel="stylesheet" href="https://use.typekit.net/cyv4ivo.css">
 </head>
 <body>
-
-
     <nav id="top">
-
         <div class="menuItems">
-            <a href="">Home</a>
-            <a href="">School Projects</a>
-            <a href="">Hobby</a>
-            <a href="">Contact</a>
+            <a href="#art">My Drawings</a>
+            <a href="#foto">Fotos</a>
+            <a href="#bottom">Contact</a>
         </div>
         <!-- <a href="#" class="icon" onclick="myMenu">
             <i class="fa fa-bars"></i>
@@ -29,61 +25,25 @@
         <header><h1>Martin Pham's Portfolio</h1></header>
     </nav>
 
-
     <!-- Skole Projekter -->
     <main class="skole">
         <section class="mylogo">
-            <img src="imgs/me.png" style="width: 300px" alt="logo">
+            <img src="imgs/me.png" alt="logo">
         </section>
-    
         <aside class="slideshow">
-            <a href="spacejourney.html"><img src="imgs/space.jpg" alt="Space Project"></a>
+            <a href="spacejourney.html" class="spacelogo"><img src="imgs/space.jpg" alt="Space Project"></a>
             <!-- <a href=""><img src="" alt="Dance Project"></a> -->
-            <a href="dance.html"><img src="imgs/logoswing-utext.png" alt="Dance 2. Part"></a>
+            <a href="dance.html" class="dancelogo"><img src="imgs/logoswing-utext.png" alt="Dance 2. Part"></a>
             <!-- <a href=""><img src="imgs/logofull.png" alt="Entrepenurial Competition"></a>
             <a href=""><img src="imgs/SoMe.PNG" alt="SoMe Project"></a> -->
-            <a href="" target="_blank"><img src="imgs/howToHygge.png" alt="Video Project"></a>
-        
-            <!-- <div class="slideItem space">
-                <a href="">
-                    <img src="imgs/space.jpg" alt="Space Project">
-                </a><p></p>
-            </div>
-            <div class="slideItem dance1">
-                <a href="">
-                    <img src="" alt="Dance Project">
-                </a><p></p>
-            </div>
-            <div class="slideItem dance2">
-                <a href="">
-                    <img src="imgs/logoswing-utext.png" alt="Dance 2. Part">
-                </a><p></p>
-            </div>
-            <div class="slideItem comp">
-                <a href="">
-                    <img src="imgs/logofull.png" alt="Entrepenurial Competition">
-                </a><p></p>
-            </div>
-            <div class="slideItem soMe">
-                <a href="">
-                    <img src="imgs/SoMe.PNG" alt="SoMe Project">
-                </a><p></p>
-            </div>
-            <div class="slideItem video">
-                <a href="">
-                    <img src="imgs/howToHygge.png" alt="Video Project">
-                </a><p></p>
-            </div> -->
-
-            <a class="prev" onclick="">Prev</a>
-            <a class="next" onclick="">Next</a>
+            <a href="video.html"><img src="imgs/howToHygge.png" alt="Video Project"></a>
         </aside>
-        <p class="mobile">swipe right for more</p>
-        <p class="dt">scroll right for more</p>
+        <!-- <span class="mobile">swipe right for more</span>
+        <span class="desktop">scroll right for more</span> -->
     </main>
     <!-- Sektion for mine ting -->
-    <section class="frame frame-art">
-        <h2>Art Work</h2>
+    <section class="frame">
+        <h2 id="art">Art Work</h2>
         <div class="flexContainer">
             <img src="imgs/hobby/flowing.png" alt="Drawing">
             <img src="imgs/hobby/piratZen.png" class="cover expand" alt="Drawing">
@@ -94,8 +54,8 @@
         </div>
     </section>
 
-    <section class="frame frame-fotos">
-        <h2>Fotos</h2>
+    <section class="frame">
+        <h2 id="foto">Fotos</h2>
         <div class="flexContainer">
             <img src="imgs/hobby/fotos/1.JPG" alt="Foto">
             <img src="imgs/hobby/fotos/2.JPG" alt="Foto">
@@ -113,12 +73,12 @@
     </section>
 
     <section class="contact">
-        <a href="#top">Back to Top</a>
+        <a href="#top" class="btn backtotop">Back to Top</a>
         <p>mart803d@edu.zealand.dk</p>
         <p>50 39 77 77</p>
     </section>
 
-    <footer>
+    <footer id="bottom">
         <p>A Project for 1. Semester Exam</p>
     </footer>
 

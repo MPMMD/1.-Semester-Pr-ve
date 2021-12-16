@@ -1,0 +1,576 @@
+@font-face{
+    font-family: bratsy;
+    src: url(BratsyScriptDemo.otf);
+}
+
+:root{
+    --hover-color:#5FA28D;
+    --click-color:#74bca3;
+    --underOverskrift-color:#E5771E;
+    --overskrift-font: bratsy;
+    --mobiloverskriftsize: 50px; 
+    --nav-color:#5A3D2B;
+    --selected-color:#C78573;
+    --footer-color:#F4A127;
+    --border-color:#707070; 
+    --tekst-font:arial;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff1c6;
+    font-family: arial;
+}
+
+h1{
+    font-family: bratsy;
+    font-weight: lighter;
+}
+
+
+header h1{
+    text-align: center;
+}
+
+
+.slogo{
+    display: block;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.shop ul{
+    list-style-type: none;
+    padding: 0;
+}
+.shop li{
+    display: block;
+    background-color: var(--click-color);
+    border-radius: 16px;
+    margin: 21px;
+    height: 63px;
+    width: 342px;
+    padding-top: 20px;
+}
+.selector{
+    background-color: #fff;
+}
+.shop a{
+    text-decoration: none;
+    color: black;
+}
+
+.shop span{
+    background-color: white;
+    border-radius: 16px;
+    height: 63px;
+    width: 342px;
+    padding-top: 20px;
+}
+
+.kurv{
+    display: block;
+    /* float: right; */
+    background-color: white;
+    width: 78px;
+    height: 62px;
+    border-radius: 16px;
+}
+.kurv a{
+    color: black;
+    text-decoration: none;
+}
+
+.sort{
+    display: block;
+    /* float: right; */
+    background-color: white;
+    width: 171px;
+    height: 37px;
+    border-radius: 16px;
+}
+.sort a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-top: 46px;
+}
+
+.katalog{
+    position: relative;
+    background-color: white;
+    border-radius: 16px;
+    width: 342px;
+    height: 473px;
+    margin-left: 36px;
+    border: 1px solid var(--border-color);
+}
+.katalog h2{
+    color: var(--underOverskrift-color);
+    font-size: 35px;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 23px;
+}
+.katalog-event{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    height: auto    ;
+}
+.katalog-event img{
+    height: 150px;
+}
+.eventboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin:20px;
+}
+
+.pris{
+    background-color: #fff;
+    text-align:center;
+    border-radius: 16px;
+    width: 342px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    border: 1px solid var(--border-color);
+}
+.pris a{
+    color: var(--underOverskrift-color);
+}
+
+.katalog-betaling p{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.katalog-betaling aside{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+.katalog img{
+    width: 142px;
+    object-fit: cover;
+}
+.enhanced img{
+    width: 333px;
+}
+
+.katalog-fix{
+    height: 496px;
+    margin-bottom: 3%;
+}
+.katalog-fix a{
+    text-decoration: none;
+}
+
+/* grids til billederne */
+.katalogBilleder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 40px;
+}
+
+.shoe{
+    position: relative;
+    top: -55px;
+    height: 156px;
+    width: 156px;
+    border: 1px solid #707070;
+    margin-top: 7px;
+}
+
+.shoe2{
+    margin-left: 17px;
+}
+.shoe4{
+    margin-left: 17px;
+}
+
+.btn{
+    border-radius: 16px;
+    background-color: var(--click-color);
+    width: 166px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    text-align: center;
+    padding-top: 16px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn div a{
+    float: right;
+    position: relative;
+    top: -34px;
+    right: -80px;
+   
+    padding-top: 15px;
+    
+    background-color: #BE4F4F;
+    border-radius: 24px;
+    width: 78px;
+    height: 32px;
+}
+
+.btn-køb{
+    position: relative;
+    top: -90px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+aside a h3{
+    color: black;
+    font-size: 35px;
+    position: relative;
+    top:-25px;
+}
+.pris-betaling a{
+    color: black;
+    text-decoration: none;
+}
+
+.katalog div input{
+    margin: 12px;
+}
+
+.webNavMain{
+    display:none;
+}
+
+header img{
+    display:block;
+    width: 166px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Fjerner navn'en på mobil */
+.shopNav{
+    display: none;
+}
+.footer-main{
+    clear: both;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    
+}
+
+.footer h3, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: block;
+}
+.footer p{
+    color: white;
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-some{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.footer-some p{
+    display: none;
+    color: white;
+}
+.footer-some a{
+    text-decoration: none;
+}
+
+.forside-img-vertical{
+    display: none;
+}
+/* Emils Mobil nav */
+.mobilNavMenu{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: 91px;
+}
+
+.mobilNavMenu a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mobilNavMenu ul{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    padding: 0;
+    
+}
+
+.mobilNavMenu li{
+    background-color: var(--click-color);
+    list-style: none;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid gray;
+    height: 75px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.mobilNavMenu li a{
+    display: block;
+    width: 100%;
+    height: 65px;
+    padding-top: 25px; 
+}
+@media screen and (min-width:415px) {
+    .mobilNavMenu{
+        display: none;
+    }
+    header img{
+        display: none;
+    }
+    .katalog-fix{
+        position: relative;
+        right: 5%;
+        float:right;
+        width: 70%;
+        height: 874px;
+    }
+    .katalog-event{
+        width: 80%;
+        height: 60%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 3%;
+    }
+    .eventboard{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+    .katalog-betaling{
+        width: 342px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .enhanced{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header h1{
+        font-size: 72px;
+    }
+    .sort{
+        position: relative;
+        left: 5%;
+        text-align: center;
+        font-size: 35px;
+        float: left;
+        width: 260px;
+        height: 874px;
+        border: 1px solid #707070;;
+    }
+    .shop li{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .katalog img{
+        margin-top: 50px;
+        width: 260px;
+        height: auto;
+    }
+
+    .shopNav{
+        display: block;
+        background-color: var(--nav-color);
+    }
+    .shopNav ul{
+        display: flex;
+        flex-direction:row;
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+    }
+    /* Vend til bage til dette, tror det virker nu */
+    .shopNav ul li{
+        display:inline;
+        background-color: var(--click-color);
+        width: 260px;
+        text-align: center;
+    }
+
+    .shopNav ul li a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding-top: 3em;
+        /* padding: 36px 130px 36px 130px; */
+        
+    }
+    .logoNav {
+        background-color: transparent;
+    }
+
+    .katalog-event img{
+        height: 322px;
+    }
+    .navClick:hover{background-color: var(--hover-color)}
+    .navClick-active{background-color: var(--selected-color);}
+    .logoNav img{
+        width: 70px;
+        background-color: none;
+    }
+  
+    /* emils css til desktop af navigationen */
+    .webNavMain{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--nav-color);
+        margin: 0;
+    }
+    .webNavMain ul{
+        display: flex;
+        height: 73px;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+    }
+
+    .webNavMain a{
+        color: white;
+        text-decoration: none;
+        width: 260px;
+    }
+    .webNavMain li{
+        display: inline;
+    }
+    .textLink{
+        background-color: var(--click-color);
+        padding-top: 20px;
+        width: 260px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .textLink:hover{
+        background-color: #5FA28D;
+    }
+    .textlink-active{
+        background-color: var(--selected-color) !important;
+    }
+    .textlink-active:hover{
+        background-color: var(--selected-color);
+    }
+    .webNavMain img{
+        display: inline;
+        width: 70px;
+    }
+}
+
+/* Maikens footer */
+@media screen and (min-width: 992px) {
+    .footer-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 200px;
+    }  
+    .footer-some{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .footer-some p{
+        display: inline-flex;
+    }
+    .some-icon-row-bottom{
+        grid-row: 2/2;
+        padding: 10px;
+    }
+    .some-icon-row-top{
+        grid-row: 1/2;
+        padding: 10px;
+    }
+    .forside-body{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .forside-header{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .forside-logo{
+        margin-top: 50px;
+    }
+    .forside-section-text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row: 2;
+        padding: 20px;
+    }
+    .forside-section-picture-flow{
+        display: none;
+    }
+    .forside-img-vertical{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forside-img-vertical img{
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+    marquee {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: normal;
+        overflow: hidden;
+    }
+    .forside-text{
+        margin-left: 300px;
+        margin-right: 100px;
+    }
+}
