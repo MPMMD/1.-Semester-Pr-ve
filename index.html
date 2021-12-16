@@ -6,51 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 Semester Eksamen</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/me.png" type="image/x-icon">
     <!-- Adgang til Font Awesome Icons - Så jeg kan bruge Burger menu ikon'et -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link til adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/cyv4ivo.css">
 </head>
 <body>
-    <header><h1>Martin Pham's Portfolio</h1></header>
 
-    <nav>
+
+    <nav id="top">
+
         <div class="menuItems">
             <a href="">Home</a>
             <a href="">School Projects</a>
             <a href="">Hobby</a>
             <a href="">Contact</a>
         </div>
-        <a href="#" class="icon" onclick="myMenu">
+        <!-- <a href="#" class="icon" onclick="myMenu">
             <i class="fa fa-bars"></i>
-        </a>
+        </a> -->
+        <header><h1>Martin Pham's Portfolio</h1></header>
     </nav>
+
+
     <!-- Skole Projekter -->
     <main class="skole">
-        <img src="" alt="logo">
-        <aside>
-            <a href=""><img src="" alt=""></a><p></p>
-            <a href=""><img src="" alt=""></a><p></p>
-            <a href=""><img src="" alt=""></a><p></p>
-            <a href=""><img src="" alt=""></a><p></p>
-            <a href=""><img src="" alt=""></a><p></p>
+        <section class="mylogo">
+            <img src="imgs/me.png" style="width: 300px" alt="logo">
+        </section>
+    
+        <aside class="slideshow">
+            <a href="spacejourney.html"><img src="imgs/space.jpg" alt="Space Project"></a>
+            <!-- <a href=""><img src="" alt="Dance Project"></a> -->
+            <a href="dance.html"><img src="imgs/logoswing-utext.png" alt="Dance 2. Part"></a>
+            <!-- <a href=""><img src="imgs/logofull.png" alt="Entrepenurial Competition"></a>
+            <a href=""><img src="imgs/SoMe.PNG" alt="SoMe Project"></a> -->
+            <a href="" target="_blank"><img src="imgs/howToHygge.png" alt="Video Project"></a>
+        
+            <!-- <div class="slideItem space">
+                <a href="">
+                    <img src="imgs/space.jpg" alt="Space Project">
+                </a><p></p>
+            </div>
+            <div class="slideItem dance1">
+                <a href="">
+                    <img src="" alt="Dance Project">
+                </a><p></p>
+            </div>
+            <div class="slideItem dance2">
+                <a href="">
+                    <img src="imgs/logoswing-utext.png" alt="Dance 2. Part">
+                </a><p></p>
+            </div>
+            <div class="slideItem comp">
+                <a href="">
+                    <img src="imgs/logofull.png" alt="Entrepenurial Competition">
+                </a><p></p>
+            </div>
+            <div class="slideItem soMe">
+                <a href="">
+                    <img src="imgs/SoMe.PNG" alt="SoMe Project">
+                </a><p></p>
+            </div>
+            <div class="slideItem video">
+                <a href="">
+                    <img src="imgs/howToHygge.png" alt="Video Project">
+                </a><p></p>
+            </div> -->
+
+            <a class="prev" onclick="">Prev</a>
+            <a class="next" onclick="">Next</a>
         </aside>
+        <p class="mobile">swipe right for more</p>
+        <p class="dt">scroll right for more</p>
     </main>
     <!-- Sektion for mine ting -->
-    <section class="frame frame-drawings">
-        <h2>Drawings</h2>
-        <a href=""><img src="" alt=""></a><p></p>
-        <a href=""><img src="" alt=""></a><p></p>
-        <a href=""><img src="" alt=""></a><p></p>
-        <a href=""><img src="" alt=""></a><p></p>
-        <a href=""><img src="" alt=""></a><p></p>
+    <section class="frame frame-art">
+        <h2>Art Work</h2>
+        <div class="flexContainer">
+            <img src="imgs/hobby/flowing.png" alt="Drawing">
+            <img src="imgs/hobby/piratZen.png" class="cover expand" alt="Drawing">
+            <img src="imgs/hobby/agony.jpg" alt="Drawing">
+            <img src="imgs/hobby/wormMonster.png" alt="Drawing">
+            <img src="imgs/hobby/rotmgHalloweenContest2021.jpg" class="cover" alt="Drawing">
+            <img src="imgs/hobby/aPlaceForgotten.jpg" alt="Drawing">
+        </div>
     </section>
 
-    <section class="frame frame-fotoes">
-        <h2>Fotoes</h2>
-        
+    <section class="frame frame-fotos">
+        <h2>Fotos</h2>
+        <div class="flexContainer">
+            <img src="imgs/hobby/fotos/1.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/2.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/3.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/4.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/5.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/6.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/7.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/8.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/9.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/10.JPG" class="cover" alt="Foto">
+            <img src="imgs/hobby/fotos/11.JPG" alt="Foto">
+            <img src="imgs/hobby/fotos/12.JPG" alt="Foto">
+        </div>
     </section>
 
     <section class="contact">
+        <a href="#top">Back to Top</a>
         <p>mart803d@edu.zealand.dk</p>
         <p>50 39 77 77</p>
     </section>
