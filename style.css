@@ -16,6 +16,9 @@ h1,h2,h3,h4,h5,h6{
     font-family: var(--kometsc-font);
     font-size: 28pt;
 }
+.desktopLogo{
+    display: none;
+}
 h1{
     font-size: 18pt;
     text-align: center;
@@ -189,11 +192,18 @@ footer{
     padding-bottom: 2em;
 }
 @media screen and (min-width: 1367px) {
+    .desktopLogo{
+    display: block;
+    margin-left: 18rem;
+    margin-right: auto;
+}
+    .mobileLogo{display: none;}
     nav {
         float: left;
         text-align: left;
         font-size: 24pt;
         width: 450px;
+        
     }
     nav a{
         font-size: 18pt;
