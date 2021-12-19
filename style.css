@@ -14,16 +14,18 @@ body{
     color: var(--dark-color);
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: var(--kometsc-font);
+    font-family: var(--poppins-font);
     font-size: 28pt;
+    font-weight: lighter;
 }
 h1{
     font-size: 24pt;
     text-align: center;
     font-family: var(--poppins-font);
     font-weight: 500;
-
 }
+.mobilehideNav{display: none;}
+.mobilehide{display: none;}
 .head2{
     font-family: var(--poppins-font);
     width: 40%;
@@ -219,20 +221,48 @@ footer{
     margin-right: auto;
     padding-bottom: 2em;
 }
-.videoplayer{
+iframe{
     display: block;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 2em;
+    border: none;
 }
+
 @media screen and (min-width: 1367px) {
+    .active{text-decoration: underline;}
+    .desktophide{display: none;}
+    .mobilehide{display: inline;}
+    .mobilehideNav{display: block;}
+    nav a:hover{color: var(--mid-color);}
+    .light p{color: var(--light-color);}
+    .head2 h1{
+        margin-left: 0;
+    }
+    .mylogo{
+        width: 30vw;
+        margin-left: 10vw;
+    }
+    .mylogo img{
+        margin-left: 8%;
+    }
     nav {
-        /* float: left; */
+        padding: 0;
+        padding-left: 4.4em;
+        height: 2em;
+        width: 55vw;
+        background-color: var(--dark-color);
+        clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+        font-family: var(--poppins-font);
+        font-size: 28pt;
         text-align: left;
-        font-size: 24pt;
     }
     nav a{
-        font-size: 18pt;
+        padding-top: 0.7em;
+        margin: 0;
+        margin-right: 2em;
+        color: var(--light-color);
+        text-decoration: none;
     }
     h1{
         margin-top: 1em;
@@ -250,15 +280,19 @@ footer{
         height: 375px;
     }
     .slideshow{
-        /* float: right; */
-        /* clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%); */
+
     }
     .slideshow img{
         width: 80%;
         height: 20%;
     }
     .info{
-        margin: 8rem;
+        margin: 4rem 8rem;
+
+    }
+    .info h1{ 
+        font-size: 24pt;
+        font-weight: normal;
     }
     .info img{
         width: 20%;
@@ -266,10 +300,6 @@ footer{
     iframe{
         width: 700px;
         height: 400px;
-    }
-    .frame{
-        padding-left: 140px;
-        padding-right: 140px;
     }
     .flexContainer{
         display: grid;
@@ -281,14 +311,6 @@ footer{
         width: 352px;
         height: 198px;
         border-radius: 8px;
-    }
-    .btn{
-        border-radius: 8px;
-        padding-top: 10px;
-        height: 2rem;
-    }
-    .backtotop{
-        padding-bottom: 1rem;
     }
 }
 @media screen and (min-width: 1920px) {
