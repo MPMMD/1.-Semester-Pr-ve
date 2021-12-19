@@ -14,37 +14,35 @@
 </head>
 <body>
     <nav id="top">
-        <div class="menuItems">
             <a href="#art">My Drawings</a>
             <a href="#foto">Fotos</a>
             <a href="#bottom">Contact</a>
-        </div>
-        <!-- <a href="#" class="icon" onclick="myMenu">
-            <i class="fa fa-bars"></i>
-        </a> -->
-        <header><h1>Martin Pham's Portfolio</h1></header>
     </nav>
 
     <!-- Skole Projekter -->
+    <section class="mylogo">
+        <a href="aboutme.html">
+            <img src="imgs/me.png" alt="logo">
+        </a>
+        <header class="head2">
+            <h1>Martin Pham</h1>
+            <p>Multimedia Design
+                <br>
+                1. Semester
+            </p>
+        </header>
+    </section>
     <main class="skole">
-        <section class="mylogo">
-            <img src="imgs/me.png" class="mobileLogo" alt="logo">
-            <img src="imgs/Component 4 – 5@2x.png" class="desktopLogo" alt="logo">
-        </section>
-        <aside class="slideshow">
+        <!-- <aside class="slideshow"> -->
             <a href="spacejourney.html" class="spacelogo"><img src="imgs/space.jpg" alt="Space Project"></a>
             <!-- <a href=""><img src="" alt="Dance Project"></a> -->
             <a href="dance.html" class="dancelogo"><img src="imgs/logoswing-utext.png" alt="Dance 2. Part"></a>
-            <!-- <a href=""><img src="imgs/logofull.png" alt="Entrepenurial Competition"></a>
-            <a href=""><img src="imgs/SoMe.PNG" alt="SoMe Project"></a> -->
             <a href="video.html"><img src="imgs/howToHygge.png" alt="Video Project"></a>
-        </aside>
-        <!-- <span class="mobile">swipe right for more</span>
-        <span class="desktop">scroll right for more</span> -->
+        <!-- </aside> -->
     </main>
     <!-- Sektion for mine ting -->
     <section class="frame">
-        <h2 id="art">Art Work</h2>
+        <h2 id="art">Drawings</h2>
         <div class="flexContainer">
             <img src="imgs/hobby/flowing.png" alt="Drawing">
             <img src="imgs/hobby/piratZen.png" class="cover expand" alt="Drawing">
@@ -53,9 +51,9 @@
             <img src="imgs/hobby/rotmgHalloweenContest2021.jpg" class="cover" alt="Drawing">
             <img src="imgs/hobby/aPlaceForgotten.jpg" alt="Drawing">
         </div>
-    </section>
 
-    <section class="frame">
+        <a href="#top" class="btn backtotop">Back to Top</a>
+
         <h2 id="foto">Fotos</h2>
         <div class="flexContainer">
             <img src="imgs/hobby/fotos/1.JPG" alt="Foto">
@@ -70,17 +68,17 @@
             <img src="imgs/hobby/fotos/10.JPG" class="cover" alt="Foto">
             <img src="imgs/hobby/fotos/11.JPG" alt="Foto">
             <img src="imgs/hobby/fotos/12.JPG" alt="Foto">
-        </div>
+        </div> 
     </section>
-
-    <section class="contact">
-        <a href="#top" class="btn backtotop">Back to Top</a>
-        <p>mart803d@edu.zealand.dk</p>
-        <p>50 39 77 77</p>
+    <section id="bottom">
+        <section class="contact">
+            <a href="#top" class="btn backtotop">Back to Top</a>
+            <p>mart803d@edu.zealand.dk</p>
+            <p>50 39 77 77</p>
+        </section>
+        <footer>
+            <p>A Project for 1. Semester Exam</p>
+        </footer>
     </section>
-
-    <footer id="bottom">
-        <p>A Project for 1. Semester Exam</p>
-    </footer>
 </body>
 </html>
